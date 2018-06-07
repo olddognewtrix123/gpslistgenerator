@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geocoding service</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+  </head>
+  <body onLoad="initMap()" style="background: blue; color: white; text-align: center">  
+
+    <div id="floating-panel" style="text-align: center; margin: 0 auto">
+
+	    </br>
+	    <h4>Enter your semicolon-delimited list of addresses and click the Get Coordinates button.</h4>
+	    <h4>Remember, your semicolon-delimited list of addresses needs to formatted like this:</h4>
+	    <h4>"7301 Buttercup Rd,Sykesville Maryland;7555 Waterloo Rd,Jessup Maryland;30420 Revells Neck Rd,Westover Maryland"</h4>
+	    <h4>The list can be as long as you like. Please note that a GPS coordinate gets returned once every two seconds,</h4>
+	    <h4>so you will not get your results all at once. The delay guarantees the accuracy of the results from Google's API.</h4>
+	    <h4>Sorry, there's only the raw data on the screen and no nicely formatted data export. </h4>
+	    <h4>You will have to copy your list of GPS coordinates straight from the page and handle formatting yourself.</h4>
+	    <h4>The fact that the list is semicolon-delimited should enable you to do this easily in Excel or some similar application</h4>
+	    </br>
+
+      <input id="address" type="textbox" value="Sydney, NSW">
+      	</br>
+      	</br>
+      	</br>
+      <input id="submit" type="button" value="Get Coordinates">
+	    </br>
+	    </br>
+	    </br>
+	    <label for="coordinates">Your coordinates:</label>
+	    </br>
+	      <div style="width: 50%; margin: 0 auto">
+	      <p style="text-align: center; margin: 0 auto" id="display" type="text" value="" style="width:275px"></p>
+	      </div>
+    </div>
+    
+          
+  <script> var arc = 'getKey.js' </script>
+  
+          <script  
+   src="https://maps.googleapis.com/maps/api/js?key=" + arc >
+    </script>       
+    
+  <script type="text/javascript" src="clickController.js"></script>
+  </body>
+
+
+
+
+
+<!--
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geocoding service</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+  </head>
+<body >  
+
+    <div id="floating-panel">
+
+<input id="key" type="textbox" value="enter your key and click Key">
+<input id="submitkey" type="button" value="Key"  onClick="getthekey()">
+	</br>
+	</br>
+      <input id="address" type="textbox" value="Sydney, NSW">
+      <input id="submit" type="button" value="Coordinates" onClick="initMap()">
+	</br>
+	</br>
+	</br>
+	<label for="coordinates">coordinates:</label>
+	</br>
+	<p id="display" type="text" value="" style="width:275px"></p>
+    </div>
+    
+    
+  <script> 
+    function getthekey(){
+      var thisisit =  document.getElementById("key").value;
+      var thisisall =  "https://maps.googleapis.com/maps/api/js?key=" + thisisit;
+      var s = document.createElement('script');
+      s.src = thisisall;
+      document.head.appendChild(s);
+      console.log("Success!!!!!!!!!!!!!!!!" + thisisall)
+    }
+  </script>
+  
+  <script  s.src ></script>
+    
+  <script type="text/javascript" src="controllers/clickController.js"></script>
+  
+  </body>
+
+-->
+
+
+
+
+
+
+  
+  
+  

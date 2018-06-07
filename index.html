@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geocoding service</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+ 
+    <meta charset="utf-8">
+  </head>
+<body style="background: blue; color: white; text-align: center">  
+
+    <div id="floating-panel" >
+        </br>
+	</br>
+	</br>
+	<h4>Welcome to the GPS List Generator. </h4>
+    <h4>This application accepts a semicolon delimited string of street addresses and returns a </h4>
+    <h4>corresponding semicolon-delimited list of GPS locations.</h4>
+    <h4>The GPS List Generator produces only the raw data on the screen and no formatted data export. </h4>
+	<h4>The fact that the list is semicolon-delimited should enable formatting in Excel or a similar application</h4>
+	<h4>To use the GPS List Generator, first you must obtain your own Google Maps API key.  </h4>
+	<h4>Please note that since this is a front-end application only (it is just a bunch of code that runs </h4>
+	<h4>in the browser) the GPS List Generator is by design NOT set up to record any information that gets</h4>
+	<h4>plugged into it. The only way there could be a database running in the background recording what </h4>
+	<h4>you type is if your internet provider is doing something nefarious. GPS List Generator itself does </h4>
+	<h4>not hang on to anyone's information.</h4>
+	<h4>Have your list of addresses that you want the matching GPS locations ready and formatted like so:</h4>
+	<h4>"7301 Buttercup Rd,Sykesville Maryland;7555 Waterloo Rd,Jessup Maryland;30420 Revells Neck Rd,Westover Maryland"</h4>
+	
+	<h4>Begin by entering your Google Maps API key below and then clicking Enter</h4>
+<input id="key" type="textbox" value="">
+
+</br>
+	</br>
+	</br>   
+        
+        
+     <form > 
+
+          <button onClick="getKey()">Enter</button>
+        </form>  
+	</br>
+	</br>
+	</br>
+
+
+    
+  </body>
+  
+  <script type="text/javascript" src="getKey.js"></script>
+</html>
